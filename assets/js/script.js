@@ -27,7 +27,7 @@ var machines = [{
     rateOfUsage:100, //increases 10 km per second 
         parts: [{
             partName: "wheels",
-            partImg: "assets/img/tire.mp4",
+            partImg: "../img/tire.mp4",
             partLifespan: 20000,
             partRateOfUsage: 1000 },
             {
