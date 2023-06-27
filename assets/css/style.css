@@ -163,7 +163,7 @@ align-items: center;
     margin: 13px;
     border: 1px solid black;
     position: relative;
-    background-image: url("/assets/img/tire5.png");
+    background-image: "";
     background-size: cover;
 
 }

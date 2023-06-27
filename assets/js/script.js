@@ -4,6 +4,7 @@ var lifeUsageEl = $("#lifeUsage");
 var lifeEstimateEl = $("#lifeEstimate");
 var partLifeTimeEl = $('.partLifeTime');
 var partLifeTimeEndEl = $('.partLifeTimeEnd');
+var partItemEL = $('.partItem');
 var partNameEl = $('.partName');
 var partListEl = $("#partsList");
 var replacePartBtnEl = $("#replacePartBtn");
@@ -28,11 +29,13 @@ var machines = [{
         parts: [{
             partName: "wheels",
             partImg: "../img/tire.mp4",
+            partImgThumb: "url('../img/tire5.png",
             partLifespan: 20000,
             partRateOfUsage: 1000 },
             {
             partName: "Engine",
             partImg: "",
+            partImgThumb: "",
             partLifespan: 100000,
             partRateOfUsage: 500
         }]
@@ -45,11 +48,13 @@ var machines = [{
         parts: [{
             partName: "Scanner",
             partImg: "",
+            partImgThumb: "",
             partLifespan: 2000,
             partRateOfUsage: 100 },
             {
             partName: "TrayFeeder",
             partImg: "",
+            partImgThumb: "",
             partLifespan: 100000,
             partRateOfUsage: 500
         }]
@@ -111,6 +116,10 @@ function renderMachine(event){
     // }
     console.log(machines[0].parts[0].partLifespan);
     console.log(machines[0].parts[0].partRateOfUsage);
+
+    //render small thumbnail image
+    partItemEL.css("background-image",machines[0].parts[0].partImgThumb);
+
 
     partTimer = renderUsageTimerOfParts(partLifeTimeEl[0],machines[0].parts[0].partLifespan, machines[0].parts[0].partRateOfUsage);
     partLifeTimeEndEl[0].textContent = `/ ${machines[0].parts[0].partLifespan}`;
