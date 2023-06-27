@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #707070;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+}
+.hide{
+    display: none !important;
+}
+h1{
+    font-size: 60px;
+    line-height: 55px;
+    margin: 30px 0;
+}
+/* testing */
+
+h3{
+font-size: 25px;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 15px;
+}
+
+h5{
+    margin-top: -10px;
+    padding: 0;
+}
+
+#start{
+    background-color: #5BA3BE;
+    border-radius: 35px;
+    width: 290px;
+    height: 60px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo1, #myVideo2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+ 
+}
+
+main{
+    z-index: 3;
+    position: relative;
+}
+
+
+#headerMachine{
+ height: 8vh;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ min-height: 20px;
+ background-color: transparent;
+ /* padding-top: 10px; */
+}
+
+#middleContent{
+ height: 70vh;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ background-color: transparent;
+ padding: 30px 30px 10px 30px;
+}
+
+#machineCard{
+width: 25%;
+}
+
+#partsHistory{
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4976584383753502) 20%, rgba(255,255,255,1) 80%);
+width: 25%;
+display: flex;
+flex-direction: column;
+padding: 10px;
+align-items: center;
+}
+
+
+
+#bottomContent{
+ height: 20vh;
+ min-height: 100px;
+ background-color: transparent;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+}
+
+#landingPageHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#historyListHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#historyList{
+    width: 90%;
+    
+}
+
+.historyItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#partsCard{
+ border: 1px solid #CBCBCB;
+ background-color: rgba(255, 255, 255, 0.5);
+ display: flex;
+ width:90%;
+ flex-direction: row;
+ justify-content: flex-start;
+}
+
+#partsLabel{  
+    text-align: center;
+    transform: rotate(-90deg);
+    position: relative;
+    translate: 20px;
+}
+
+#partsList{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    list-style-type: none;
+    
+}
+
+.partItem{
+    width: 150px;
+    height: 100px;
+    margin: 13px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url("/assets/img/tire5.png");
+    background-size: cover;
+
+}
+
+.partLifeTime,.partLifeTimeEnd{
+    display: inline; 
+}
+
+.bottomPartTimer{
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    margin-bottom: 0;
+    display: inline;
+}
+
+.partName{
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    margin-bottom: 0;
+}
+
+#replacePartBtn{
+    position: absolute;
+    top: -100px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    background-color:antiquewhite;
+    margin-bottom: 0;
+    border: 1px solid  #707070;
+}
