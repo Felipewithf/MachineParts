@@ -29,7 +29,7 @@ var machines = [{
         parts: [{
             partName: "wheels",
             partImg: "../img/tire.mp4",
-            partImgThumb: "url('../img/tire5.png",
+            partImgThumb: "url('./assets/img/tire5.png",
             partLifespan: 20000,
             partRateOfUsage: 1000 },
             {
